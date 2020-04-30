@@ -1,0 +1,31 @@
+total 44
+drwxrwxr-x 2 gaurav gaurav 4096 Apr 30 17:57 .
+drwxrwxr-x 4 gaurav gaurav 4096 Apr 29 22:44 ..
+-rwxrwxrwx 1 gaurav gaurav  187 Apr 29 23:48 01_helloScript.sh
+-rwxrwxrwx 1 gaurav gaurav 1850 Apr 30 14:24 02_conditionalTrial.sh
+-rwxrwxrwx 1 gaurav gaurav 1087 Apr 30 17:26 03_loops.sh
+-rwxrwxr-x 1 gaurav gaurav  821 Apr 30 17:38 04_scriptInput.sh
+-rwxrwxr-x 1 gaurav gaurav  299 Apr 30 17:43 05_scriptInput_readFile.sh
+-rwxrwxr-x 1 gaurav gaurav  681 Apr 30 17:57 06_scriptOutput.sh
+-rw-rw-r-- 1 gaurav gaurav   86 Apr 29 23:40 file.txt
+-rw-rw-r-- 1 gaurav gaurav   10 Apr 30 17:57 stderr.txt
+-rw-rw-r-- 1 gaurav gaurav    0 Apr 30 17:57 stdout.txt
+-rw-rw-r-- 1 gaurav gaurav  533 Apr 30 17:41 topic.txt
+3. ls -al - Assumes the file is for stdout
+total 48
+drwxrwxr-x 2 gaurav gaurav 4096 Apr 30 17:57 .
+drwxrwxr-x 4 gaurav gaurav 4096 Apr 29 22:44 ..
+-rwxrwxrwx 1 gaurav gaurav  187 Apr 29 23:48 01_helloScript.sh
+-rwxrwxrwx 1 gaurav gaurav 1850 Apr 30 14:24 02_conditionalTrial.sh
+-rwxrwxrwx 1 gaurav gaurav 1087 Apr 30 17:26 03_loops.sh
+-rwxrwxr-x 1 gaurav gaurav  821 Apr 30 17:38 04_scriptInput.sh
+-rwxrwxr-x 1 gaurav gaurav  299 Apr 30 17:43 05_scriptInput_readFile.sh
+-rwxrwxr-x 1 gaurav gaurav  681 Apr 30 17:57 06_scriptOutput.sh
+-rw-rw-r-- 1 gaurav gaurav   86 Apr 29 23:40 file.txt
+-rw-rw-r-- 1 gaurav gaurav   71 Apr 30 17:57 stderr.txt
+-rw-rw-r-- 1 gaurav gaurav  755 Apr 30 17:57 stdout.txt
+-rw-rw-r-- 1 gaurav gaurav  533 Apr 30 17:41 topic.txt
+4. ls +al - Assumes the file is for stdout and error goes to terminal and not any file
+5. ls +al - stdout and stderr to one and the same file
+ls: cannot access '+al': No such file or directory
+6. ls +al - shortcut for stdout and stderr to one and the same file
