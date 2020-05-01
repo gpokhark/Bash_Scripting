@@ -1,1 +1,2 @@
-output/
+# ignore files and folders with name starting with output
+output*
