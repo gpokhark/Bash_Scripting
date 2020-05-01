@@ -22,3 +22,44 @@ Source for this tutorial is this [video](https://www.youtube.com/watch?v=e7BufAV
 20. Introduction to awk
 21. Introduction to sed
 22. Debugging bash scripts
+
+## To Debug a script
+1. For step by step debugging -
+```cmd
+bash -x ./script.sh
+```
+2. Put `-x` with the hashbang line inside the script
+```bash
+#!/usr/bin/bash -x
+...
+...
+...
+```
+
+3. Select the start and stop line for debugging by adding `set -x` and `set +x` in the script. For example -
+```bash
+#!/usr/bin/bash
+
+# start debugging from this line
+set -x
+
+echo "While Loop - whle the conditions is true or changes to false"
+number=1
+while [ $number -lt 10 ]
+do
+    echo "$number"
+    # mathematical operation in bash script
+    number=$(( number+1 ))
+done
+
+# stop debugging at this line
+set +x
+
+echo "Until loop - until the condition is false or changes to true"
+number=1
+until [ $number -ge 10 ]
+do
+    echo "$number"
+    number=$(( number+1 ))
+done
+```
